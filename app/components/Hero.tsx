@@ -20,11 +20,19 @@ export const Hero = () => {
         <Center w="400px">
           <Box zIndex={"docked"}>
             <Box rounded="lg" bg={"white"} p={"16px"}>
-              <Heading className={myFont.className}>しゃるうぃー</Heading>
-              <Heading className={myFont.className}>クライミング</Heading>
+              <Heading className={myFont.className} sx={{ fontWeight: "100" }}>
+                しゃるうぃー
+              </Heading>
+              <Heading className={myFont.className} sx={{ fontWeight: "100" }}>
+                クライミング
+              </Heading>
             </Box>
             <Center mt={"32px"}>
-              <Button as="a" href={"https://tunagate.com/circle/81865"}>
+              <Button
+                as="a"
+                href={"https://tunagate.com/circle/81865"}
+                sx={{ fontWeight: "100" }}
+              >
                 つなげーとで募集中
               </Button>
             </Center>
