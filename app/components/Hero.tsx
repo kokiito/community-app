@@ -7,7 +7,11 @@ const myFont = localFont({ src: "../851H-kktt_004.ttf" });
 
 export const Hero = () => {
   return (
-    <Box w="100%" h="100vh" className={myFont.className}>
+    <Box
+      w="100%"
+      h="100vh"
+      // className={myFont.className}
+    >
       <Image
         src={"/headerIcon.png"}
         position={"absolute"}
@@ -20,14 +24,20 @@ export const Hero = () => {
         <Center w="400px">
           <Box zIndex={"docked"}>
             <Box rounded="lg" bg={"white"} p={"16px"}>
-              <Heading className={myFont.className} sx={{ fontWeight: "100" }}>
-                しゃるうぃー
+              <Heading
+                // className={myFont.className}
+                sx={{ fontWeight: "100" }}
+              >
+                BOULDERING CLUB
               </Heading>
-              <Heading className={myFont.className} sx={{ fontWeight: "100" }}>
-                クライミング
+              <Heading
+                // className={myFont.className}
+                sx={{ fontWeight: "100" }}
+              >
+                TOKYO
               </Heading>
             </Box>
-            <Center mt={"32px"}>
+            {/* <Center mt={"32px"}>
               <Button
                 as="a"
                 href={"https://tunagate.com/circle/81865"}
@@ -35,7 +45,7 @@ export const Hero = () => {
               >
                 つなげーとで募集中
               </Button>
-            </Center>
+            </Center> */}
           </Box>
         </Center>
         <Box
