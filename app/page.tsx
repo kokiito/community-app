@@ -1,7 +1,18 @@
 "use client";
 import { Hero } from "./components/Hero";
-import { Box, Center, Container, Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Center,
+  Container,
+  Heading,
+  Image,
+  Text,
+} from "@chakra-ui/react";
 import lineQr from "./images/group_invite_QR_code.jpg";
+import NextLink from "next/link";
+import { FaLine } from "react-icons/fa";
+import { Icon } from "@chakra-ui/react";
 
 // TODO: not Foundの場合の処理を追加する
 export default async function Home() {
@@ -39,8 +50,33 @@ export default async function Home() {
               borderRadius="md"
               boxSize="150px"
               src={lineQr.src}
-              alt="Dan Abramov"
+              alt="LINE QR CODE"
+              display={{ base: "flex", sm: "none", md: "flex" }}
             />
+            <Button
+              bgColor={"#06c755"}
+              color={"white"}
+              display={{ md: "none" }}
+              borderRadius={"20px"}
+              minH={"50px"}
+              minW={"300px"}
+            >
+              <NextLink
+                href={
+                  "https://line.me/ti/g2/ZDwRJy4DtzgKc4LP-4ejzfpIkdbohi1Tt1qAIA?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
+                }
+                passHref
+              >
+                <Center>
+                  {/* <Image src={lineIcon.src} boxSize="50px" />
+                   */}
+                  <Icon as={FaLine} w={8} h={8} mr={"15px"} />
+                  <Text fontSize={"20px"} mt={"4px"}>
+                    {"友達に追加"}
+                  </Text>
+                </Center>
+              </NextLink>
+            </Button>
           </Center>
         </Box>
       </Container>
