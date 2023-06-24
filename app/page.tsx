@@ -36,7 +36,7 @@ export default async function Home() {
           </Center>
           <Center mt={"35px"}>
             <Image
-              borderRadius="sm"
+              borderRadius="md"
               boxSize="150px"
               src={lineQr.src}
               alt="Dan Abramov"
