@@ -38,7 +38,7 @@ export default async function Home() {
           <Center>
             <Heading>公式LINEアカウント</Heading>
           </Center>
-          <Center px={"90px"} mt={"15px"}>
+          <Center px={{ base: "10px", md: "90px" }} mt={"15px"}>
             <Box>
               <Text>
                 東京都内で平日夜などボルダリングジムで活動しています。メンバー募集中です！出入り自由。気軽に参加してみください！
@@ -51,7 +51,7 @@ export default async function Home() {
               boxSize="150px"
               src={lineQr.src}
               alt="LINE QR CODE"
-              display={{ base: "flex", sm: "none", md: "flex" }}
+              display={{ base: "none", sm: "none", md: "flex" }}
             />
             <Button
               bgColor={"#06c755"}

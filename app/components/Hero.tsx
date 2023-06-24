@@ -52,7 +52,7 @@ export const Hero = () => {
           flex="1"
           backgroundImage={"/borudaringukabe.jpg"}
           backgroundSize={"cover"}
-          position={["absolute", "absolute", "initial"]}
+          position={"absolute"}
           width={"100%"}
           height={"100vh"}
         ></Box>
