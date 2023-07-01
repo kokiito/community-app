@@ -64,8 +64,6 @@ export const AddLine = () => {
               passHref
             >
               <Center>
-                {/* <Image src={lineIcon.src} boxSize="50px" />
-                 */}
                 <Icon as={FaLine} w={8} h={8} mr={"15px"} />
                 <Text fontSize={"20px"} mt={"4px"}>
                   {"友達に追加"}
