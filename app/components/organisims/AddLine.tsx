@@ -9,11 +9,11 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import NextLink from "next/link";
-import lineQr from "../images/group_invite_QR_code.jpg";
+import lineQr from "../../images/group_invite_QR_code.jpg";
 import { Icon } from "@chakra-ui/react";
 import { FaLine } from "react-icons/fa";
 
-export const AddLineContainer = () => {
+export const AddLine = () => {
   return (
     <Container
       maxW="container.sm"
