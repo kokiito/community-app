@@ -21,7 +21,7 @@ export const AddLine = () => {
       display="flex"
       justifyContent="center"
       alignItems="center"
-      height={"100vh"}
+      height={"70vh"}
       maxWidth={"600px"}
     >
       <Box

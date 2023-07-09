@@ -15,7 +15,7 @@ export const AboutUs = () => {
         <Center>
           <Heading as={"h1"}>About Us</Heading>
         </Center>
-        <Box mt={"30px"}>
+        <Box mt={"50px"}>
           <Text>
             東京ボルダリングクラブとは都内近郊でボルダリングを一緒に登るために定期的に集うコミュニテイです。
           </Text>
